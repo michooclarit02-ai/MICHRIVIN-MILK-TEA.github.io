@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MICHRIVIN MILK TEA</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#ff6ec4,#7873f5,#42e695);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color:white;
+}
+
+@keyframes gradientBG{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+header{
+    text-align:center;
+    padding:30px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    background:rgba(0,0,0,0.3);
+    padding:15px;
+}
+
+nav button{
+    background:none;
+    border:none;
+    color:white;
+    font-size:18px;
+    margin:0 15px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+nav button:hover{
+    color:#ffe600;
+}
+
+/* Sections */
+.section{
+    display:none;
+    padding:40px;
+    text-align:center;
+}
+
+.active{
+    display:block;
+}
+
+/* Products */
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    background:white;
+    color:black;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    border-radius:15px;
+}
+
+.price{
+    color:#ff0080;
+    font-weight:bold;
+}
+
+.card button{
+    background:linear-gradient(to right,#ff0080,#ff8c00);
+    border:none;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.3);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>MICHRIVIN MILK TEA</h1>
+<p>Sweet • Colorful • Refreshing</p>
+</header>
+
+<nav>
+<button onclick="showTab('home')">Home</button>
+<button onclick="showTab('menu')">Menu</button>
+<button onclick="showTab('order')">How to Order</button>
+<button onclick="showTab('contact')">Contact</button>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="section active">
+<h2>Welcome to MICHRIVIN MILK TEA</h2>
+<p>Experience the most vibrant and refreshing milk tea flavors!</p>
+</div>
+
+<!-- MENU -->
+<div id="menu" class="section">
+<h2>🛒 Our Milk Tea Menu</h2>
+
+<div class="products">
+
+<div class="card">
+<div class="img-box"><img src="https://www.betterwithdairy.com/sites/default/files/2025-02/2_Boba-Milk-Tea.jpg" alt="2_Boba-Milk-Tea"></div>
+<h3>Classic Milk Tea</h3>
+<p class="price">₱100</p>
+<button onclick="alert('Added to cart!')">Order Now</button>
+</div>
+
+<div class="card">
+<div class="img-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPkzdYddBCCu5kwmxaykjYzosoxserVZhZTg&s" alt='Wintermelon'></div>
+<h3>Wintermelon</h3>
+<p class="price">₱105</p>
+<button onclick="alert('Added to cart!')">Order Now</button>
+</div>
+
+<div class="card">
+<div class="img-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf6hMFNFQPUgtEQvsDZu0f_iMz0tRO71zN5Q&s" alt="Okinawa"></div>
+<h3>Okinawa</h3>
+<p class="price">₱105</p>
+<button onclick="alert('Added to cart!')">Order Now</button>
+</div>
+
+<div class="card">
+<div class="img-box"><img src="https://maesmenu.com/wp-content/uploads/2023/06/ube-boba-9.jpg" alt="Ube Taro"></div>
+<h3>Ube Taro</h3>
+<p class="price">₱105</p>
+<button onclick="alert('Added to cart!')">Order Now</button>
+</div>
+
+<div class="card">
+<div class="img-box"><img src="https://www.kerryfoodservice.com/cdn/shop/files/BigTrain_Boba_Photoshoot_StrawberryFieldsMilkTea_038_1000x.png?v=1719517777" alt="strawberry"></div>
+ <h3>Strawberry Milktea</h3>
+ <p class="price">₱105</p>
+ <button onclick="alert('Added to cart')">Order Now</button>
+</div>
+
+<div class="card">
+<div class="img-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtj4-E-XEiXYZC0R8m6EjccKPXgGV_c75rpw&s" alt="matcha latte"></div>
+<h3>Matcha Latte</h3>
+<p class="price">₱120</p>
+<button onclick="alert"(Added to cart!)>Order Now</button>
+</div>
+
+<div class="card">
+<div class="img-box"><img src="https://lifestyleofafoodie.com/wp-content/uploads/2024/04/Spanish-Latte-Recipe-5.jpg" alt="spanish latte"></div>
+<h3>Spanish Latte</h3>
+<p class="price">₱120</p>
+<button onclick="alert"(Added to cart!)>Order Now</button>
+</div>
+
+<div class="card">
+<div class="img-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq9KYeh0tNte5wbi6ZTkwM0rJyX0MZqpX5iw&s" alt="pumpkin spice latte"></div>
+<h3>Pumpkin Spice Latte</h3>
+<p class="price">₱120</p>
+<button onclick="alert"(Added to cart!)>Order Now</button>
+</div>
+
+
+</div>
+</div>
+
+<!-- HOW TO ORDER -->
+<div id="order" class="section">
+<h2>📦 How to Order</h2>
+<p>1️⃣ Go to Menu</p>
+<p>2️⃣ Choose your favorite flavor</p>
+<p>3️⃣ Click Order Now</p>
+<p>4️⃣ Send us your details via contact below</p>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="section">
+<h2>📞 Contact Us</h2>
+<p>📞 09095130067
+<p>📧 oclaritmicho39@gmail.com</p>
+<p>📍 Dela Paz, Antipolo City</p>
+</div>
+
+<footer>
+<p>MICHRIVIN | Stay Sweet</p>
+</footer>
+
+<script>
+function showTab(tabId){
+    const sections=document.querySelectorAll('.section');
+    sections.forEach(section=>section.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+}
+</script>
+
+</body>
+</html>
